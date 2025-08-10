@@ -20,11 +20,11 @@
    * unify the brand across the site and create a welcoming yet
    * vibrant atmosphere.
    */
-  --primary-color: #c62828;     /* logo red for headers and accents */
-  --secondary-color: #0d47a1;   /* deep blue for buttons and highlights */
-  --accent-color: #f6b93b;      /* golden yellow for subtle accents */
-  --light-color: #FAF7F2;       /* soft beige background */
-  --dark-color: #2B303A;        /* dark charcoal for text */
+  --primary-color: #c62828; /* logo red for headers and accents */
+  --secondary-color: #0d47a1; /* deep blue for buttons and highlights */
+  --accent-color: #f6b93b; /* golden yellow for subtle accents */
+  --light-color: #faf7f2; /* soft beige background */
+  --dark-color: #2b303a; /* dark charcoal for text */
   --max-width: 1200px;
 }
 
@@ -566,7 +566,55 @@ footer .social-icons a:hover {
   .room-card img {
     height: 150px;
   }
-  .rooms-table th, .rooms-table td {
+  .rooms-table th,
+  .rooms-table td {
     padding: 0.5rem;
   }
+}
+/* BOTÓN WHATSAPP */
+.whatsapp-container {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  z-index: 999;
+}
+
+.whatsapp-button {
+  position: relative;
+  display: inline-block;
+  background-color: #25d366;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+
+.whatsapp-button img {
+  width: 30px;
+  height: 30px;
+}
+
+.tooltip {
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  left: 70px;
+  top: 15px;
+  background-color: white;
+  color: black;
+  padding: 8px 12px;
+  border-radius: 10px;
+  white-space: nowrap;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+  font-size: 14px;
+}
+
+.whatsapp-button:hover .tooltip {
+  visibility: visible;
+  opacity: 1;
 }
