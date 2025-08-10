@@ -212,8 +212,8 @@ section {
 
 .room-card img {
   width: 100%;
-  height: 180px;
-  object-fit: cover;
+  height: auto;
+  display: block;
 }
 
 .room-card-body {
@@ -562,9 +562,6 @@ footer .social-icons a:hover {
   .about-content {
     flex-direction: column;
     text-align: center;
-  }
-  .room-card img {
-    height: 150px;
   }
   .rooms-table th,
   .rooms-table td {
