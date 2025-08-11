@@ -378,6 +378,12 @@ footer .social-icons a {
   transition: color 0.2s ease;
 }
 
+footer .social-icons img {
+  width: 1.5rem;
+  height: 1.5rem;
+  display: block;
+}
+
 footer .social-icons a:hover {
   color: var(--accent-color);
 }
