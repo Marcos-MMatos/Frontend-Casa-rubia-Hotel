@@ -17,6 +17,10 @@
     referrerpolicy="no-referrer"
   />
   <link rel="stylesheet" href="style.css" />
+  <link
+    href="https://cdn.jsdelivr.net/npm/@n8n/chat/dist/style.css"
+    rel="stylesheet"
+  />
 </head>
 <body>
   <header>
@@ -93,6 +97,13 @@
   </footer>
 
   <script src="script.js"></script>
+  <script type="module">
+    import { createChat } from "https://cdn.jsdelivr.net/npm/@n8n/chat/dist/chat.bundle.es.js";
+
+    createChat({
+      webhookUrl: "http://localhost:5678/webhook/944cade3-de28-4eb7-b347-f534e267e27f/chat",
+    });
+  </script>
   <div class="whatsapp-container">
     <a
       href="https://wa.me/573046717881"
